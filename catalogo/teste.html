@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Catálogo</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+        </div>
+    </header>
+
+    <main class="sliders-container" id="main-content">
+        <!-- Teste manual -->
+        <div class="slider-section">
+            <div class="slider-header">
+                <h2 class="slider-title">Teste de Filme</h2>
+            </div>
+            <div class="movie-row">
+                <div class="movie-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg" alt="Forrest Gump">
+                    <div class="card-details">
+                        <div class="details-buttons">
+                            <div class="left-buttons">
+                                <button class="btn-icon btn-play-icon">▶</button>
+                                <button class="btn-icon">+</button>
+                                <button class="btn-icon">👍</button>
+                            </div>
+                        </div>
+                        <div class="details-info">
+                            <span class="match-score">90% relevante</span>
+                            <span class="duration">2h 22m</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="https://aventurasnahistoria.com.br/wp-content/uploads/entretenimento/gladiador_2_VvnGVes.jpg" alt="Gladiador">
+                    <div class="card-details">
+                        <div class="details-buttons">
+                            <div class="left-buttons">
+                                <button class="btn-icon btn-play-icon">▶</button>
+                                <button class="btn-icon">+</button>
+                                <button class="btn-icon">👍</button>
+                            </div>
+                        </div>
+                        <div class="details-info">
+                            <span class="match-score">85% relevante</span>
+                            <span class="duration">2h 34m</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        console.log('Página de teste carregou');
+        const container = document.getElementById('main-content');
+        console.log('Container existe:', !!container);
+        console.log('Número de filmes:', container.querySelectorAll('.movie-card').length);
+    </script>
+</body>
+</html>
